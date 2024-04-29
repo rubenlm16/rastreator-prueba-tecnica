@@ -60,11 +60,14 @@ $(function() {
                             $('#showSuccess').height($('#showForm').height());
                             $('#showForm').hide();
                         } else {
-                        // TODO: mostrar error de envío
+                            $('#alert-error').removeClass('d-none')
                         }
                     } else if (typeof data === 'object') {
-                        // TODO: mostrar error de validaciones en el servidor
+                        $('#alert-error').removeClass('d-none')
                     }
+                },
+                error: function(){
+                    $('#alert-error').removeClass('d-none')
                 }
             });
         }
