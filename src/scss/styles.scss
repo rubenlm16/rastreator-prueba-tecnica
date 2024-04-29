@@ -143,19 +143,31 @@ input[type="checkbox"], input[type="radio"] {
 .img-form{
     position: absolute;
     z-index: -999;
-    width: 50%;
-    clip-path: circle(40%);
+    width: 90%;
+    clip-path: circle(30%);
 }
 
 .img-form-1 {
-    bottom: 15%;
-    left: 0;
+    bottom: 0;
+    left: -20%;
 }
 
 .img-form-2 {
     top: 15%;
-    right: 0;
+    right: -20%;
 } 
+
+@media screen and (max-width: 992px) {
+    .img-form-1 {
+        bottom: 0;
+        left: -30%;
+    }
+    
+    .img-form-2 {
+        top: 15%;
+        right: -30%;
+    } 
+}
 
 //FOOTER
 
