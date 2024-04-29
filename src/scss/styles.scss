@@ -1,0 +1,171 @@
+@import "bootstrap/scss/bootstrap";
+
+$primary-color: #009DDD;
+$secondary-color: #E4007C;
+$text-color: #015368;
+
+@font-face {
+    font-family: 'Rising Sun';
+    font-weight: 400;
+    src: url('../fonts/RisingSun-Regular.ttf') format('truetype');
+}
+  
+body {
+    font-family: 'Rising Sun', sans-serif;
+    color: #015368;
+    font-size: 16px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 60px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+a {
+    color: $text-color;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    accent-color: $secondary-color;
+    width: 20px;
+    height: 20px;
+}
+
+.text-primary {
+    color: $primary-color !important;
+}
+
+.text-secondary {
+    color: $secondary-color !important;
+}
+
+.bkg-primary {
+    background-color: $primary-color !important;
+}
+
+.bkg-secondary {
+    background-color: $secondary-color !important;
+}
+
+.text-rastreator{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.custom-check {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.check-input:after {
+    background-color: red;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: $primary-color !important;
+}
+
+// HEADER
+
+.header-contact{
+    display: flex;
+    flex-wrap: wrap !important; 
+}
+
+.header-phone{
+    order: 2;
+    width: 100%;
+}
+
+.header-rastreator{
+    order: 1;
+    width: 100%;
+}
+
+@media screen and (min-width: 992px){
+    .header-contact{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap !important;
+    }
+    
+    .header-phone{
+        display: inline-block;
+        order: unset;
+        width: auto;
+    }
+    
+    .header-rastreator{
+        display: inline-block;
+        order: unset;
+        width: auto;
+        margin-left: 20px;
+    }
+}  
+
+// FORM
+#contact-form {
+    box-shadow: 0px 16px 20px 0px #00000012;
+    background-color: #ffffff;
+}
+
+#contact-phone {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#contact-phone a {
+    text-decoration: none;
+}
+
+.error {
+    color: red;
+}
+
+#showSuccess {
+    display: none;
+}
+
+.img-form{
+    position: absolute;
+    z-index: -999;
+    width: 50%;
+    clip-path: circle(40%);
+}
+
+.img-form-1 {
+    bottom: 15%;
+    left: 0;
+}
+
+.img-form-2 {
+    top: 15%;
+    right: 0;
+} 
+
+//FOOTER
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 992px) {
+    footer {
+        font-size: 12px;
+    }
+}

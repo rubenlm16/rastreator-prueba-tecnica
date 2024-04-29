@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seguro de Salud de Adeslas</title>
+  </head>
+  <body class="container">
+    <header class="row py-5 justify-content-between">
+        <div class="col-2 d-flex align-items-center">
+            <img src="https://www.segurcaixaadeslas.es/themes/adeslas/logo.svg" width="200" alt="Logo Adeslas">
+        </div>
+        <div class="header-contact col-8 col-lg-10 justify-content-end">
+            <div class="header-phone text-end">
+                <div id="contact-phone">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 16C18.8 16 17.6 15.8 16.4 15.4C16.1 15.3 15.7 15.4 15.4 15.6L13.2 17.8C10.4 16.4 8.1 14 6.6 11.2L8.8 9C9.1 8.7 9.2 8.3 9 8C8.7 6.9 8.5 5.7 8.5 4.5C8.5 3.9 8.1 3.5 7.5 3.5H4C3.4 3.5 3 3.9 3 4.5C3 13.9 10.6 21.5 20 21.5C20.6 21.5 21 21.1 21 20.5V17C21 16.4 20.6 16 20 16Z" fill="#009DDD"/>
+                    </svg>
+                    <a class="text-primary" href="tel:900000000"><b>900 000 000</b></a>
+                </div>
+                L-V de 9:00 a 18:45
+            </div>
+            <div class="header-rastreator text-rastreator text-end">
+                by Rastreator
+            </div>
+        </div>
+    </header>
+    <main class="row pb-5">
+        <!-- Columna 1 -->
+        <div class="col-12 col-lg-5">
+            <h1 class="text-primary my-4">Seguro de Salud de Adeslas
+                <br>
+                <span class="text-secondary">Desde 21,90€</span>
+            </h1>
+            <h2>Presupuesto gratis</h2>
+            <ul class="custom-check col-8">
+                <li>
+                    <p>
+                        <span class="text-secondary pe-3">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.98012 8.53302L2.51474 5.06763C2.12519 4.67808 1.49395 4.67697 1.10302 5.06514L1.10012 5.06802C0.709384 5.45601 0.707153 6.08729 1.09514 6.47803L1.09763 6.48052L5.98012 11.363L14.9053 2.33937C15.2922 1.94824 15.2905 1.31806 14.9014 0.92905L14.8997 0.927289C14.5126 0.540188 13.885 0.540188 13.4979 0.927289L13.4938 0.93138L5.98012 8.53302Z" fill="#E4007C"/>
+                            </svg>
+                        </span>
+                        <strong>Adeslas</strong> te ofrece un
+                        <strong>seguro médico completo y personalizado</strong>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <span class="text-secondary pe-3">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.98012 8.53302L2.51474 5.06763C2.12519 4.67808 1.49395 4.67697 1.10302 5.06514L1.10012 5.06802C0.709384 5.45601 0.707153 6.08729 1.09514 6.47803L1.09763 6.48052L5.98012 11.363L14.9053 2.33937C15.2922 1.94824 15.2905 1.31806 14.9014 0.92905L14.8997 0.927289C14.5126 0.540188 13.885 0.540188 13.4979 0.927289L13.4938 0.93138L5.98012 8.53302Z" fill="#E4007C"/>
+                            </svg>
+                        </span>
+                        <strong>En Adeslas</strong> disponemos de <strong>servicios 
+                            pensados en nuestros clientes</strong> para que
+                            su relación con nosotros sea más fácil, ágil y eficaz.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!-- Columna 2 -->
+        <div class="col-12 col-lg-7 position-relative row justify-content-center">
+            <img src="images/img-form.jpg" class="img-form img-form-1" alt="">
+            <div class="img-container">
+
+            </div>
+            <div id="showForm" class="col-12 col-lg-8">
+                <div class="bkg-primary text-light text-center p-4 rounded-top-1">
+                    <h3>¡Te llamamos gratis!</h3>
+                </div>
+                <form id="contact-form" class="form-group p-4">
+                    <div id="alert-error" class="alert alert-danger alert-dismissible fade d-none" role="alert">
+                        Error de envío, revisa los datos
+                    </div>
+                    <input class="form-control my-4 p-3" type="text" id="name" name="name" placeholder="Nombre">
+                    <input class="form-control my-4 p-3" type="tel" id="phone" name="phone" placeholder="Teléfono">
+                    <input class="form-control my-4 p-3" type="email" id="email" name="email" placeholder="Email">
+                    <input class="form-control my-4 p-3" type="text" id="dni" name="dni" placeholder="DNI">
+                    <div class="row justify-content-around col-12 my-4">
+                        <div class="col-4">
+                            <span><b>Franja horaria</b></span>
+                        </div>
+                        <div class="col-4 d-flex align-items-center">
+                            <input type="radio" name="scheduleRadio" id="morningRadio" value="0">
+                            <label class="form-check-label ms-2" for="morningRadio">
+                                Mañana
+                            </label>
+                        </div>
+                        <div class="col-4 d-flex align-items-center">
+                            <input type="radio" name="scheduleRadio" id="afternoonRadio" value="1" checked>
+                            <label class="form-check-label ms-2" for="afternoonRadio">
+                                Tarde
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mt-4 d-flex align-items-center">
+                        <input type="checkbox" class="me-3" id="acceptance" name="acceptance"> 
+                        <label for="acceptance">
+                            He leído y acepto el <a href="https://www.rastreator.com/aviso-legal.aspx">Aviso Legal</a> y la <a href="https://www.rastreator.com/politica-de-privacidad.aspx">Política de Privacidad</a>
+                        </label>
+                    </div>
+                    <input type="submit" class="text-light bkg-secondary col-12 p-3 border-0 mt-4 rounded-1" value="Enviar">
+                </form>
+            </div>
+            <img src="images/img-form.jpg" class="img-form img-form-2" alt="">
+            <div id="showSuccess" class="col-12 col-lg-8 bkg-primary justify-content-center align-items-center text-center">
+                <div class="col-12 col-lg-10">
+                        <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M58.2175 84.776L38.0028 64.5613C35.7304 62.2889 32.0482 62.2824 29.7678 64.5467L29.7509 64.5635C27.4716 66.8268 27.4585 70.5093 29.7218 72.7886L29.7363 72.8031L58.2175 101.284L110.281 48.6464C112.538 46.3648 112.528 42.6888 110.259 40.4195L110.248 40.4093C107.99 38.1512 104.329 38.1512 102.071 40.4093L102.047 40.4331L58.2175 84.776Z" fill="white"/>
+                    </svg>
+                    <p class="text-light">Gracias, contactaremos contigo en el horario indicado :)</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bkg-primary row p-2 p-lg-5 justify-content-center">
+        <div class="col-12 col-lg-6 order-2 order-lg-1 text-center align-items-center">
+            <a href="https://www.rastreator.com/aviso-legal.aspx" class="d-inline-block">Aviso Legal</a>
+            <a href="https://www.rastreator.com/politica-de-cookies.aspx" class="d-inline-block m-3">Políticas de Cookies</a>
+            <a href="https://www.rastreator.com/politica-de-privacidad.aspx" class="d-inline-block">Políticas de Privacidad</a>
+        </div>
+        <div class="col-12 col-lg-6 order-1 order-lg-2 text-light text-lg-end my-3 text-center">
+            Recuerda revisar la información básica de privacidad
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.705 8.79368C7.09448 8.4042 7.72586 8.40385 8.11577 8.79291L12 12.6687L15.8842 8.79291C16.2741 8.40385 16.9055 8.4042 17.295 8.79368C17.6844 9.18304 17.6844 9.81432 17.295 10.2037L12 15.4987L6.705 10.2037C6.31564 9.81432 6.31564 9.18304 6.705 8.79368Z" fill="white"/>
+            </svg>                
+        </div>
+    </footer>
+  </body>
+</html>
