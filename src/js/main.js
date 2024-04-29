@@ -1,9 +1,9 @@
 import '../scss/styles.scss'
 import $ from 'jquery';
 import 'jquery-validation';
-
 import '../images/img-form.jpg';
 import '../images/logo.svg';
+import { API_URL } from './config';
 
 $(function() {
     $('#contact-form').validate({
@@ -52,7 +52,7 @@ $(function() {
         },
         submitHandler: function(form) {
             $.ajax({
-                url: 'http://localhost',
+                url: API_URL,
                 type: 'POST',
                 data: $(form).serialize(),
                 success: function(data) {
