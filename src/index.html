@@ -25,15 +25,15 @@
             </div>
         </div>
     </header>
-    <main class="row pb-5">
+    <main class="row justify-content-center pb-5">
         <!-- Columna 1 -->
-        <div class="col-12 col-lg-5">
+        <div class="col-12 col-lg-5 px-4 pb-4">
             <h1 class="text-primary my-4">Seguro de Salud de Adeslas
                 <br>
                 <span class="text-secondary">Desde 21,90€</span>
             </h1>
             <h2>Presupuesto gratis</h2>
-            <ul class="custom-check col-8">
+            <ul class="custom-check col-12 col-lg-8">
                 <li>
                     <p>
                         <span class="text-secondary pe-3">
@@ -69,7 +69,7 @@
                 <div class="bkg-primary text-light text-center p-4 rounded-top-1">
                     <h3>¡Te llamamos gratis!</h3>
                 </div>
-                <form id="contact-form" class="form-group p-4">
+                <form id="contact-form" class="form-group p-3 p-lg-4">
                     <div id="alert-error" class="alert alert-danger alert-dismissible fade d-none" role="alert">
                         Error de envío, revisa los datos
                     </div>
@@ -77,17 +77,17 @@
                     <input class="form-control my-4 p-3" type="tel" id="phone" name="phone" placeholder="Teléfono">
                     <input class="form-control my-4 p-3" type="email" id="email" name="email" placeholder="Email">
                     <input class="form-control my-4 p-3" type="text" id="dni" name="dni" placeholder="DNI">
-                    <div class="row justify-content-around col-12 my-4">
-                        <div class="col-4">
+                    <div class="row justify-content-center col-12 my-4 schedule-radio">
+                        <div class="col-3 col-lg-4">
                             <span><b>Franja horaria</b></span>
                         </div>
-                        <div class="col-4 d-flex align-items-center">
+                        <div class="col-5 col-lg-4 d-flex justify-content-end align-items-center">
                             <input type="radio" name="scheduleRadio" id="morningRadio" value="0">
                             <label class="form-check-label ms-2" for="morningRadio">
                                 Mañana
                             </label>
                         </div>
-                        <div class="col-4 d-flex align-items-center">
+                        <div class="col-4 d-flex justify-content-end align-items-center">
                             <input type="radio" name="scheduleRadio" id="afternoonRadio" value="1" checked>
                             <label class="form-check-label ms-2" for="afternoonRadio">
                                 Tarde
@@ -115,11 +115,12 @@
         </div>
     </main>
     <footer class="bkg-primary row p-2 p-lg-5 justify-content-center">
-        <div class="col-12 col-lg-6 order-2 order-lg-1 text-center align-items-center">
+        <div class="col-12 col-lg-6 order-3 order-lg-1 text-center align-items-center">
             <a href="https://www.rastreator.com/aviso-legal.aspx" class="d-inline-block">Aviso Legal</a>
             <a href="https://www.rastreator.com/politica-de-cookies.aspx" class="d-inline-block m-3">Políticas de Cookies</a>
             <a href="https://www.rastreator.com/politica-de-privacidad.aspx" class="d-inline-block">Políticas de Privacidad</a>
         </div>
+        <hr class="order-2 text-light d-lg-none">
         <div class="col-12 col-lg-6 order-1 order-lg-2 text-light text-lg-end my-3 text-center">
             Recuerda revisar la información básica de privacidad
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

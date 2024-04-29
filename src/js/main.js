@@ -81,7 +81,6 @@ function is_valid_dni(dni) {
                     return true;
                 }
             } catch (error) {
-                console.error(error.message);
                 return false;
             }
         }
