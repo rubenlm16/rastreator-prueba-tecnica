@@ -11,7 +11,7 @@ function send_email($data) {
         'Messages' => [
             [
                 'From' => [
-                    'Email' => $data['email'],
+                    'Email' => SENDER_EMAIL,
                     'Name' => "Rastreator Prueba técnica"
                 ],
                 'To' => [
@@ -32,6 +32,7 @@ function send_email($data) {
     ];
 
     $response = $mj->post(Resources::$Email, ['body' => $body]);
-    $response->success() && var_dump($response->getData());
+
+    return $response->success();
 }
 ?>

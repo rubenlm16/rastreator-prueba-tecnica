@@ -59,8 +59,9 @@ $(function() {
                             $('#showSuccess').addClass('d-flex row')
                             $('#showSuccess').height($('#showForm').height());
                             $('#showForm').hide();
-                            console.log('Formulario enviado correctamente');
-                        } 
+                        } else {
+                        // TODO: mostrar error de envío
+                        }
                     } else if (typeof data === 'object') {
                         // TODO: mostrar error de validaciones en el servidor
                     }

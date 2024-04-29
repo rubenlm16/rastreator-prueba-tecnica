@@ -40,8 +40,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             'dni' => $dni,
             'schedule' => $schedule == 1 ? 'tarde' : 'mañana',
         );
-        send_email($data);
-        echo json_encode('success');
+        if (send_email($data)){
+            echo json_encode('success');
+        } else {
+            echo json_encode('error');
+        }
     } else {
         header('Content-Type: application/json');
         echo json_encode($errors);
