@@ -133,7 +133,7 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 .error {
-    color: red;
+    color: rgb(194, 27, 27);
 }
 
 #showSuccess {
@@ -143,7 +143,7 @@ input[type="checkbox"], input[type="radio"] {
 .img-form{
     position: absolute;
     z-index: -999;
-    width: 90%;
+    width: 92%;
     clip-path: circle(30%);
 }
 
