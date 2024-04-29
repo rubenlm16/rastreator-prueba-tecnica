@@ -2,6 +2,9 @@ import '../scss/styles.scss'
 import $ from 'jquery';
 import 'jquery-validation';
 
+import '../images/img-form.jpg';
+import '../images/logo.svg';
+
 $(function() {
     $('#contact-form').validate({
         rules: {
